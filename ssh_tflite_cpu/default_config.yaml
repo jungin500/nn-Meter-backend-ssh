@@ -1,0 +1,9 @@
+SSH_REMOTE_ADDR: 10.0.0.2
+SSH_REMOTE_USER: pi
+SSH_REMOTE_PORT: 22
+SSH_PRIVATE_KEY_PATH: /home/USERNAME/.ssh/id_rsa
+SSH_PRIVATE_KEY_PASSWORD: None
+REMOTE_MODEL_DIR: /home/pi/benchmark/models/
+REMOTE_KERNEL_PATH: /home/pi/benchmark/models/kernel.cl
+REMOTE_BENCHMARK_MODEL_PATH: /home/pi/benchmark/bin/benchmark_model
+NUM_THREADS: 4

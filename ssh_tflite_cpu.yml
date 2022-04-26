@@ -1,0 +1,5 @@
+builtin_name: ssh_tflite_cpu
+package_location: <CURRENT_DIRECTORY_HERE>/ssh_tflite_cpu
+class_module: backend
+class_name: SSHTFLiteBackend
+defaultConfigFile: <CURRENT_DIRECTORY_HERE>/ssh_tflite_cpu/default_config.yaml
