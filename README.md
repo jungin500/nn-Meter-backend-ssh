@@ -14,8 +14,10 @@ nn-Meter SSH-TFLite backend
 
 # Installation
 1. Install nni==2.7.1, [jungin500/nn-Meter](https://github.com/jungin500/nn-Meter) (Use my repo with fixes - Highly recommended)
-2. Run `nn-meter register --predictor ssh_tflite_cpu.yml`
-3. Create workspace using `ssh_tflite_cpu` backend [as described on this guide](https://github.com/microsoft/nn-Meter/blob/main/docs/builder/overview.md)
-4. Open newly created `configs/backend_config.yaml` to match your own environment
-  - Password and pubkey-based auth supported (Be aware to check permission of private key!)
-5. You can use this backend within latency predictor: [Official nn-meter guide](https://github.com/microsoft/nn-Meter/blob/main/docs/builder/build_kernel_latency_predictor.md)
+2. Clone this repository to any directory and remember as `$DIRECTORY`
+3. Edit `ssh_tflite_cpu.yml` and replace `<CURRENT_DIRECTORY_HERE>` to `$DIRECTORY`
+4. Run `nn-meter register --predictor ssh_tflite_cpu.yml`
+5. Create workspace using `ssh_tflite_cpu` backend [as described on this guide](https://github.com/microsoft/nn-Meter/blob/main/docs/builder/overview.md)
+6. Open newly created `configs/backend_config.yaml` to match your own environment
+    - Password and pubkey-based auth supported (Be aware to check permission of private key!)
+7. You can use this backend within latency predictor: [Official nn-meter guide](https://github.com/microsoft/nn-Meter/blob/main/docs/builder/build_kernel_latency_predictor.md)
